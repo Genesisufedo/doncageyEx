@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+.navbar{
+   
+    height: 10vh;
+    line-height: 5vh; 
+    box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+}
+.logo {
+    font-size: 30px;
+    margin-left: 24px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    
+    justify-content: right;
+    width: 75%;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+a{
+    text-decoration: none;
+}
+.nav-links li{
+    color: black;
+    font-size: 20px;
+    padding: 0 5px;
+    margin-right: 50px;
+    /* margin: 0 10px; */
+    
+    cursor: pointer;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.nav-links link{
+    text-decoration: none;
+}
+.mobile-icon{
+    display: none;
+}
+li:hover{
+    background-color: lightskyblue;
+    color: wheat;
+    border-radius: 8px;
+}
+.himg{
+    width: 50%;
+    height: 40vh
+}
+.fximg{
+    width: 100%;
+    height: 50%;
+}
+
+/* .container{
+    margin: 30px auto;
+    padding-top: 15px;
+    display: flex;
+    background: #000;
+    width: 100%;
+    height: 400px;
+    
+}  */
+/* .about-cont{
+    display: flex;
+    padding-right: 16px;
+    margin-right: 5%;
+    gap: 30px;
+} */
+/* .aboutchild{
+    box-shadow: 0 5px 5px gray;
+    border-radius: 10px;
+    word-spacing: 12px;
+    justify-content: space-between;
+    
+
+} */
+
+
+@media (max-width: 768px){
+    .nav-links{
+        display: none;
+        flex-direction: row-reverse;
+        
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+        left: 0;
+        top: 10%;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        background-color: white;
+        
+    }
+    ul li{
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+    }
+    .mobile-icon{
+        position: absolute;
+        display: block;
+        right: 20px;
+    }
+    /* .container{
+        display: block;
+        height: auto;
+
+    } */
+    .himg{
+        width: 90%;
+        padding-top: 10%;
+        padding-left: 10%;
+        border-radius: 10%;
+    } 
+    /* .about-cont{
+    
+    } */
+
+}
